@@ -1,0 +1,15 @@
+{
+  "name": "npm_task",
+  "version": "1.0.0",
+  "description": "React learning path task",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Minase FIkadu",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

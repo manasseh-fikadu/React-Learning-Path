@@ -1,15 +1,18 @@
 import React from "react";
 
+// Profile interface
 interface Profile {
   name: string;
   bio: string;
   website?: string;
 }
 
+// Info Props interface
 interface InfoProps {
   profile: Profile;
 }
 
+// Info component
 const Info: React.FC<InfoProps> = ({ profile }) => {
   return (
     <div className="info">

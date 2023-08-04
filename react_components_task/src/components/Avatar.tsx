@@ -1,5 +1,6 @@
 import React from "react";
 
+// Avatar component
 const Avatar: React.FC = () => {
   return (
     <div className="avatar">

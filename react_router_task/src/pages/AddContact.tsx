@@ -1,29 +1,31 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useContactContext } from './ContactContext';
-import { Contact } from './contactsData';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useContactContext } from "./ContactContext";
+import { Contact } from "./contactsData";
+import "./AddContact.css"; // Import the CSS file
 
 const AddContact = () => {
   const navigate = useNavigate();
   const { addContact } = useContactContext();
 
-  const [name, setName] = useState<string>('');
-  const [email, setEmail] = useState<string>('');
-  const [phone, setPhone] = useState<string>('');
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
 
   const handleAddContact = () => {
     const newContact: Contact = {
-      id: String(Date.now()), // You can use a better method to generate unique IDs.
+      id: Math.random().toString(36).substr(2, 9),
       name,
       email,
       phone,
     };
     addContact(newContact);
-    navigate('/'); // Use navigate function to redirect to the home page.
+    navigate("/");
   };
 
   return (
-    <div>
+    <div className="AddContact">
+      {" "}
       <h2>Add New Contact</h2>
       <form>
         <div>

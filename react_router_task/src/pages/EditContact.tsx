@@ -1,8 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useContactContext } from "./ContactContext";
 import { Contact } from "./contactsData";
+import "./AddContact.css"; // Reuse the CSS file from AddContact
 
 const EditContact = () => {
   const navigate = useNavigate();
@@ -33,17 +34,10 @@ const EditContact = () => {
     }
   };
 
-  const handleDeleteContact = () => {
-    if (id) {
-      // Implement the delete functionality here
-      // You can use a deleteContact function from the ContactContext
-      // and then navigate to the home page after deletion.
-      navigate("/");
-    }
-  };
-
   return (
-    <div>
+    <div className="AddContact">
+      {" "}
+      {/* Apply the same AddContact class */}
       <h2>Edit Contact</h2>
       <form>
         <div>
@@ -76,9 +70,6 @@ const EditContact = () => {
         <div>
           <button type="button" onClick={handleUpdateContact}>
             Save Changes
-          </button>
-          <button type="button" onClick={handleDeleteContact}>
-            Delete Contact
           </button>
         </div>
       </form>

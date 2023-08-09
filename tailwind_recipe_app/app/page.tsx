@@ -5,8 +5,10 @@ import recipe_mock from "@/data/recipe_mock";
 import React from "react";
 
 const LandingPage: React.FC = () => {
+  // setting the state to the mock data
   const [recipes, setRecipes] = React.useState(recipe_mock);
 
+  // the jsx that will be rendered
   return (
     <main className="bg-gray-100">
       <div className="bg-gray-100 relative">

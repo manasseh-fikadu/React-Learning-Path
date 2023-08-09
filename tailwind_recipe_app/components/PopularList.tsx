@@ -9,15 +9,17 @@ const PopularList: React.FC<Prop> = ({ recipes }) => {
   return (
     <section className="py-8">
       <div className="container mx-auto px-4">
+        {/* Header Section */}
         <div className="lg:max-w-screen-xl sm:max-w-screen-sm mx-auto flex justify-between items-center">
           <div className="space-y-2">
-            <h1 className="font-bold lg:text-3xl">
-              Popular Recipes
-            </h1>
+            {/* Title */}
+            <h1 className="font-bold lg:text-3xl">Popular Recipes</h1>
+            {/* Description */}
             <p className="font-light text-sm sm:text-base">
               Our most popular recipes
             </p>
           </div>
+          {/* "See All" Link */}
           <div>
             <Link
               href="/recipes"
@@ -27,6 +29,7 @@ const PopularList: React.FC<Prop> = ({ recipes }) => {
             </Link>
           </div>
         </div>
+        {/* Popular Recipes Grid */}
         <div className="lg:max-w-screen-xl mx-auto lg:grid sm:max-w-screen-sm sm:grid sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 flex flex-wrap justify-center gap-8 mt-6">
           {recipes.map(
             (recipe, index) =>

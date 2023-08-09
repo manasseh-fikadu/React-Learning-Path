@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 const Hero: React.FC = () => {
   const [navbarBg, setNavbarBg] = useState("transparent");
 
+  // Listen for scroll events and update navbar background color
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
@@ -13,8 +14,8 @@ const Hero: React.FC = () => {
       }
     };
 
+    // Add scroll event listener and clean up on component unmount
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -27,7 +28,7 @@ const Hero: React.FC = () => {
           <div className="md:col-span-1 flex justify-between items-center">
             <div className="w-full flex flex-col lg:items-start items-center">
               <div>
-                <h2 className="lg:text-5xl sm:text-left sm:text-3xl  text-center text-xl font-semibold text-white mb-4 lg:max-w-[15ch] max-w-[20ch] mx-auto">
+                <h2 className="lg:text-5xl sm:text-left sm:text-3xl text-center text-xl font-semibold text-white mb-4 lg:max-w-[15ch] max-w-[20ch] mx-auto">
                   Delicious home cooking recipes for everyone
                 </h2>
                 <p className="text-white lg:text-base text-sm mb-6 max-w-[40ch] lg:mx-0 mx-auto sm:text-left sm:max-w-[50ch] text-center">

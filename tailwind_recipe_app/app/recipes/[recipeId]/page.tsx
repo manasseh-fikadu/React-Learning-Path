@@ -1,3 +1,4 @@
+'use client';
 // Import necessary dependencies
 import { useParams } from "next/navigation";
 import recipeMock from "@/data/recipe_mock";

@@ -1,3 +1,4 @@
+"use client";
 // Import necessary components and data
 import RecipeCard from "@/components/RecipeCard";
 import recipe_mock, { Recipe } from "@/data/recipe_mock";

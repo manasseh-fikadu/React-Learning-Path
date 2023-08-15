@@ -15,3 +15,14 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
+
+declare global {
+  interface Window {
+    store: any;
+  }
+}
+
+// configure cypress
+if ((window as any).Cypress) {
+  window.store = store;
+}

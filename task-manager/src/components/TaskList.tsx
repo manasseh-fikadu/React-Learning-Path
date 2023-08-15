@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { toggleTaskStatus, removeTask, setFilter } from "../redux/actions";
@@ -7,15 +7,25 @@ const TaskList: React.FC = () => {
   const dispatch = useDispatch();
   const tasks = useSelector((state: RootState) => state.tasks);
   const filter = useSelector((state: RootState) => state.filter);
+  const [error, setError] = useState(""); // Add error state
 
-  // Handle toggling task status
+
   const handleToggleTaskStatus = (index: number) => {
-    dispatch(toggleTaskStatus(index));
+    if (index >= 0 && index < tasks.length) {
+      dispatch(toggleTaskStatus(index));
+      setError(""); // Clear error on success
+    } else {
+      setError("Task not found");
+    }
   };
 
-  // Handle removing a task
   const handleRemoveTask = (index: number) => {
-    dispatch(removeTask(index));
+    if (index >= 0 && index < tasks.length) {
+      dispatch(removeTask(index));
+      setError(""); // Clear error on success
+    } else {
+      setError("Task not found");
+    }
   };
 
   // Handle setting the filter
@@ -67,6 +77,7 @@ const TaskList: React.FC = () => {
         </button>
       </div>
       {/* Scrollable table for task display */}
+      {error && <p className="text-red-500 mb-4">{error}</p>} {/* Display error message */}
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>

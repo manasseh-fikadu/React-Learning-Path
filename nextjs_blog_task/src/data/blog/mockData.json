@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "title": "Getting Started with Next.js",
+    "body": "Next.js is a powerful framework for building modern web applications.",
+    "publishedDate": "2023-08-14"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "title": "Mastering Tailwind CSS",
+    "body": "Learn how to create beautiful designs using Tailwind CSS.",
+    "publishedDate": "2023-08-15"
+  },
+  {
+    "id": 3,
+    "userId": 1,
+    "title": "Introduction to Redux State Management",
+    "body": "Redux provides a predictable way to manage the state of your application.",
+    "publishedDate": "2023-08-16"
+  }
+]

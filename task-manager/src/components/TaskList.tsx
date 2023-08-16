@@ -94,6 +94,7 @@ const TaskList: React.FC = () => {
                   {/* Status button */}
                   <button
                     onClick={() => handleToggleTaskStatus(index)}
+                    data-testid="statusButton"
                     className={`rounded-lg p-1 ${
                       task.completed ? "text-white" : "text-white"
                     }`}

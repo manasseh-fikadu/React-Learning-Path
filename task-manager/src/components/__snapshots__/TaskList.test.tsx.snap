@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component should render with given state from Redux store 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="bg-gray-100 min-h-screen flex justify-center items-center py-10"
+      >
+        <div
+          class="w-full sm:w-4/5 md:w-3/5 lg:w-2/5"
+        >
+          <div
+            class="bg-white p-6 rounded-lg shadow-md"
+          >
+            <h1
+              class="text-3xl font-bold mb-6 text-center"
+            >
+              Task Manager
+            </h1>
+            <div
+              class="bg-white p-6 rounded-lg shadow-md"
+            >
+              <h2
+                class="text-2xl font-semibold mb-4"
+              >
+                Add New Task
+              </h2>
+               
+              <form
+                id="task-form"
+              >
+                <div
+                  class="flex items-center space-x-4"
+                >
+                  <input
+                    class="flex-grow bg-gray-100 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-400"
+                    placeholder="Enter task"
+                    type="text"
+                    value=""
+                  />
+                  <button
+                    class="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg focus:outline-none"
+                  >
+                    Add Task
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="mt-6"
+          >
+            <div
+              class="bg-white p-6 rounded-lg shadow-md"
+            >
+              <h2
+                class="text-2xl font-semibold mb-4"
+              >
+                Task List
+              </h2>
+              <div
+                class="flex space-x-4 mb-4"
+              >
+                <button
+                  class="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 focus:outline-none"
+                >
+                  All
+                </button>
+                <button
+                  class="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 focus:outline-none"
+                >
+                  Completed
+                </button>
+                <button
+                  class="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 focus:outline-none"
+                >
+                  Incomplete
+                </button>
+              </div>
+               
+              <div
+                class="overflow-x-auto"
+              >
+                <table
+                  class="w-full border-collapse"
+                >
+                  <thead>
+                    <tr>
+                      <th
+                        class="border p-2 text-left"
+                      >
+                        Status
+                      </th>
+                      <th
+                        class="border p-2 text-left"
+                      >
+                        Task
+                      </th>
+                      <th
+                        class="border p-2 text-left"
+                      >
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody />
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="bg-gray-100 min-h-screen flex justify-center items-center py-10"
+    >
+      <div
+        class="w-full sm:w-4/5 md:w-3/5 lg:w-2/5"
+      >
+        <div
+          class="bg-white p-6 rounded-lg shadow-md"
+        >
+          <h1
+            class="text-3xl font-bold mb-6 text-center"
+          >
+            Task Manager
+          </h1>
+          <div
+            class="bg-white p-6 rounded-lg shadow-md"
+          >
+            <h2
+              class="text-2xl font-semibold mb-4"
+            >
+              Add New Task
+            </h2>
+             
+            <form
+              id="task-form"
+            >
+              <div
+                class="flex items-center space-x-4"
+              >
+                <input
+                  class="flex-grow bg-gray-100 border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:border-blue-400"
+                  placeholder="Enter task"
+                  type="text"
+                  value=""
+                />
+                <button
+                  class="px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg focus:outline-none"
+                >
+                  Add Task
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="mt-6"
+        >
+          <div
+            class="bg-white p-6 rounded-lg shadow-md"
+          >
+            <h2
+              class="text-2xl font-semibold mb-4"
+            >
+              Task List
+            </h2>
+            <div
+              class="flex space-x-4 mb-4"
+            >
+              <button
+                class="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 focus:outline-none"
+              >
+                All
+              </button>
+              <button
+                class="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 focus:outline-none"
+              >
+                Completed
+              </button>
+              <button
+                class="px-4 py-2 rounded-lg bg-gray-200 text-gray-800 focus:outline-none"
+              >
+                Incomplete
+              </button>
+            </div>
+             
+            <div
+              class="overflow-x-auto"
+            >
+              <table
+                class="w-full border-collapse"
+              >
+                <thead>
+                  <tr>
+                    <th
+                      class="border p-2 text-left"
+                    >
+                      Status
+                    </th>
+                    <th
+                      class="border p-2 text-left"
+                    >
+                      Task
+                    </th>
+                    <th
+                      class="border p-2 text-left"
+                    >
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody />
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

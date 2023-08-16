@@ -28,6 +28,7 @@ const TaskForm: React.FC = () => {
     <div className="bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold mb-4">Add New Task</h2>
       {error && <p className="text-red-500 mb-4">{error}</p>} {/* Display error message */}
+        <form id="task-form">
       <div className="flex items-center space-x-4">
         <input
           type="text"
@@ -43,6 +44,7 @@ const TaskForm: React.FC = () => {
           Add Task
         </button>
       </div>
+        </form>
     </div>
   );
 };
